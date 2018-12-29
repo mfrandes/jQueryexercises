@@ -58,7 +58,7 @@ document.querySelector('.close').onclick = closeModal;
 function closeModal() {
     document.getElementById("modal1").style.display = "none";
 }
-/* add new contact */
+/* add new contact nu merge :(( */
 
 
 document.getElementById("submitBtn").onclick = newContact;
@@ -115,12 +115,7 @@ $('#print').on('click', function () {
 /* Limit character input in the textarea including count */
 
 
-/* fail ---> misspell "lenght"
- var maxLenght = 15;
-  $('#limitImp').keyup(function () {
-      var textLeft = maxLenght - $(this).val().lengh;
-      $('#charLeft').text(textLeft);
-  }) */
+
 
 var maxLength = 15;
 $('#textarea').keyup(function () {
