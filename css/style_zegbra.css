@@ -1,4 +1,5 @@
 .container {
+    display: none;
     width: 80%;
     padding: 0;
     margin: 0px auto;
@@ -69,37 +70,62 @@ td {
 
 /* sectiune modal*/
 .sec-modal {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: none;
   
-  }
-  .modal-content {
-    position: relative;
-    margin: auto auto auto auto;
-    width: 500px;
-    height: 300px;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-  }
-  .modal-content input {
-    margin: 10px auto;
-    width: 50%;
-    display: block;
-  }
-  .close {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: 20px;
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
+}
+.modal-content {
+  position: relative;
+  margin: auto auto auto auto;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+.modal-content input {
+  margin: 10px auto;
+  width: 50%;
+  display: block;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+#surfBar{
+  border-top: 2px solid darkblue;
+}
+#surfBar ul{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#surfBar li{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#surfBar li a{
+  flex: 0 1 auto;
+  padding: 5px 15px 5px 15px;
+  margin: 2px 0 2px 0;
+  text-decoration: none;
+}
+#surfBar li span{
+  flex: 0 1 auto;
+  padding: 5px 15px 5px 15px;
+  margin: 2px 0 2px 0;
+  text-decoration: none;
+}

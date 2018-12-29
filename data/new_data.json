@@ -1,0 +1,33 @@
+[
+    {
+        "fName": "Meg",
+        "lName": "Griffin",
+        "grade": 7
+    },
+    {
+        "fName": "Stuard",
+        "lName": "Griffin",
+        "grade": 11
+    },
+    {
+        "fName": "Louis",
+        "lName": "Griffin",
+        "grade": 9
+    },
+    {
+        "fName": "Peter",
+        "lName": "Griffin",
+        "grade": 3
+    },
+    {
+        "fName": "Glen",
+        "lName": "Quagmaier",
+        "grade": 8
+    },
+    {
+        "fName": "Brian",
+        "lName": "Griffin",
+        "grade": 7
+    }
+
+]

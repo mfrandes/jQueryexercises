@@ -1,33 +1,19 @@
+/* nav pages */
+function sufrfPages() {
+    $('#surfBar li a').click(function (e) {
+        var page = e.target.getAttribute('data-page');
 
-/* Varianta lunga 
-
-function displayStuf (items){
-    var listItems= document.querySelector('table tbody');
-    var resultItem=items.map(function(item){
-        return `<tr>
-        <td>${item.fName} ${item.lName}</td>
-        <td>${item.grade}</td>
-        </tr>`;
+        $('.container').hide();
+        $(`#${page}-page`).fadeIn();
     });
-    
-    listItems.innerHTML = resultItem.join('');
 };
+sufrfPages();
+$(`#first-page`).show();
 
-function initStuf(){
-    $.ajax('./data/data.json').done(function(items){
-        displayStuf(items);
-        
+/* load data from json to html table */
 
-    });
-    
-};
-initStuf();
-
-*/
-
-/* Varianta scurta si optima */
 function firstTable() {
-    $.ajax('./data/data.json').done(function (students) {
+    $.ajax('data/new_data.json').done(function (students) {
         var list = $('table tbody');
         var result = students.map(function (student) {
             return `<tr>
@@ -35,17 +21,16 @@ function firstTable() {
             <td>${student.grade}</td>
             </tr>`;
         });
+
         list.html(result);
+        /* zebra style table */
+        $("#table-first tr:odd").addClass("oddZebra");
+        $("#table-first tr:even").addClass("evenZebra");
     });
 };
 firstTable();
-/* zebra style table */
 
-$(document).ready(function () {
-    $("#table-first tr:odd").addClass("oddZebra");
-    $("#table-first tr:even").addClass("evenZebra");
-});
-/* new contact modal*/
+/* new contact modal */
 
 
 document.getElementById("newContactBtn").onclick = displayModal;
@@ -58,7 +43,7 @@ document.querySelector('.close').onclick = closeModal;
 function closeModal() {
     document.getElementById("modal1").style.display = "none";
 }
-/* add new contact nu merge :(( */
+/* add new contact attempt ..sow far */
 
 
 document.getElementById("submitBtn").onclick = newContact;
@@ -114,9 +99,6 @@ $('#print').on('click', function () {
 });
 /* Limit character input in the textarea including count */
 
-
-
-
 var maxLength = 15;
 $('#textarea').keyup(function () {
     var textlen = maxLength - $(this).val().length;
@@ -150,11 +132,11 @@ function newDiv() {
 
 /* transfer btn from one div to another */
 
-$(".transferBtn").click(function(){
+$(".transferBtn").click(function () {
     console.log("I'm alive!!!")
-    if($(this).parent().attr("id") == "leftSide"){
+    if ($(this).parent().attr("id") == "leftSide") {
         $(this).detach().appendTo('#rightSide');
-    }else{
+    } else {
         $(this).detach().appendTo('#leftSide');
     }
 })
