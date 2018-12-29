@@ -1,0 +1,86 @@
+.container {
+    width: 800px;
+    padding: 0;
+    margin: 0px auto;
+}
+table{
+    width: 100%;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding-left: 15px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.oddZebra{
+    background-color: aquamarine;
+}
+.evenZebra{
+    background-color: beige;
+}
+#newContactBtn{
+  margin-top: 20px; 
+}
+#print{
+  float: right;
+  margin-top: 20px;
+}
+#wrap{
+  border-top: 2px solid darkblue;
+  display: flex;
+  margin-top: 50px;
+}
+#textarea {
+  display:block;
+  margin:1em 0;
+}  
+
+#listLearn {
+
+  float: right;
+  margin: 0px 0px 0 200px;
+}
+
+/* sectiune modal*/
+.sec-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  
+  }
+  .modal-content {
+    position: relative;
+    margin: auto auto auto auto;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+  .modal-content input {
+    margin: 10px auto;
+    width: 50%;
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
