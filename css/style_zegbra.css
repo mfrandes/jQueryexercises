@@ -32,7 +32,7 @@ td {
   float: right;
   margin-top: 20px;
 }
-#wrap{
+.wrap{
   border-top: 2px solid darkblue;
   display: flex;
   margin-top: 50px;

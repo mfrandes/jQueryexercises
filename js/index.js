@@ -125,7 +125,25 @@ $('#textarea').keyup(function () {
 
 /* turn first word to bold */
 
-$('#listLearn p').each(function(){  
-    var pdata = $(this);  
-    pdata.html( pdata.text().replace(/(^\w+)/,'<strong>$1</strong>') );  
-}); 
+$('#listLearn p').each(function () {
+    var pdata = $(this);
+    pdata.html(pdata.text().replace(/(^\w+)/, '<strong>$1</strong>'));
+});
+
+/* Create new div */
+
+function newDiv() {
+    console.log("click pe div");
+    $(document).ready(function () {
+        var test = {
+            id: "div",
+            class: "wrap",
+            css: {
+                "background-color": "green"
+            }
+        }
+        var $div = $("<div>", test);
+        $div.html("New Division");
+        $(".container").append($div);
+    });
+}
