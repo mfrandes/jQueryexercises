@@ -1,5 +1,5 @@
 .container {
-    width: 800px;
+    width: 80%;
     padding: 0;
     margin: 0px auto;
 }
@@ -46,6 +46,25 @@ td {
 
   float: right;
   margin: 0px 0px 0 200px;
+}
+#secondOfWrap {
+  height: 400px;
+  display: flex;
+}
+#leftSide {
+  background-color: blue;
+  width: 50%;
+  height: 95%;
+}
+#rightSide {
+  background-color: red;
+  width: 50%;
+  height: 95%;
+}
+.transferBtn {
+  width: 30%;
+  height: 30%;
+  margin: 5px;
 }
 
 /* sectiune modal*/

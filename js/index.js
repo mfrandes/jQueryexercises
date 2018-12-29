@@ -147,3 +147,14 @@ function newDiv() {
         $(".container").append($div);
     });
 }
+
+/* transfer btn from one div to another */
+
+$(".transferBtn").click(function(){
+    console.log("I'm alive!!!")
+    if($(this).parent().attr("id") == "leftSide"){
+        $(this).detach().appendTo('#rightSide');
+    }else{
+        $(this).detach().appendTo('#leftSide');
+    }
+})
