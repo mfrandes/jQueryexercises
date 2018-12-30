@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <title>Tbel zebra</title>
+    <title>Exercitii Jquery</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style_zegbra.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     </div>
     <div id="second-page" class="container">
         <div id="secondOfWrap" class="wrap">
-            <div id="leftSide">
+            <div id="leftSide" style="background-color:blue">
                 <button class="transferBtn">Hit me 1</button>
                 <button class="transferBtn">Hit me 2</button>
                 <button class="transferBtn">Hit me 3</button>
@@ -51,9 +51,25 @@
                 <button class="transferBtn">Hit me 8</button>
                 <button class="transferBtn">Hit me 9</button>
             </div>
-            <div id="rightSide">
-
-            </div>
+            <div id="rightSide" style="background-color:red"></div>
+        </div>
+        <div id="colorSelector">
+            <span id="optionsLeft">
+                <select id="myColorLeft">
+                    <option value="Red">Red</option>
+                    <option selected="selected" value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+                <button onclick="removeOptions(this)">Go to defalt</button>
+            </span>
+            <span id="optionsRight">
+                <select id="myColorRight">
+                    <option  selected="selected" value="Red">Red</option>
+                    <option  value="Blue">Blue</option>
+                    <option  value="Green">Green</option>
+                </select>
+                <button onclick="removeOptions(this)">Go to defalt</button>
+            </span>
         </div>
     </div>
 

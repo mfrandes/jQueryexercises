@@ -8,7 +8,7 @@ function sufrfPages() {
     });
 };
 sufrfPages();
-$(`#first-page`).show();
+$(`#second-page`).show();
 
 /* load data from json to html table */
 
@@ -140,3 +140,34 @@ $(".transferBtn").click(function () {
         $(this).detach().appendTo('#leftSide');
     }
 })
+/* options on a select box */
+
+function removeOptions(e){
+    var eatAOnion = $(e).siblings().children("option:selected", this).attr('value');
+    console.log("options:", eatAOnion);
+    $(e).siblings().empty().append(`<option selected="selected" value="${eatAOnion}">${eatAOnion}</option>`);
+}
+
+$('#myColorLeft').on('change', function () {
+    var selectVal = $("#myColorLeft option:selected").val();
+    
+    $(document).ready(function(){
+       var element = $("#leftSide")
+        element.css(`background-color`, `${selectVal}`);
+        
+        console.log("s-a selectat:", selectVal);
+    })
+    
+})
+$('#myColorRight').on('change', function () {
+    var selectVal = $("#myColorRight option:selected").val();
+    
+    $(document).ready(function(){
+       var element = $("#rightSide")
+        element.css(`background-color`, `${selectVal}`);
+        
+        console.log("s-a selectat:", selectVal);
+    })
+    
+})
+

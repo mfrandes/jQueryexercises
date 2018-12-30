@@ -36,7 +36,7 @@ td {
 .wrap{
   border-top: 2px solid darkblue;
   display: flex;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 #textarea {
   display:block;
@@ -53,19 +53,19 @@ td {
   display: flex;
 }
 #leftSide {
-  background-color: blue;
+ 
   width: 50%;
   height: 95%;
 }
 #rightSide {
-  background-color: red;
+  
   width: 50%;
   height: 95%;
 }
 .transferBtn {
-  width: 30%;
-  height: 30%;
-  margin: 5px;
+  width: 28%;
+  height: 28%;
+  margin: 2%;
 }
 
 /* sectiune modal*/
@@ -128,4 +128,16 @@ td {
   padding: 5px 15px 5px 15px;
   margin: 2px 0 2px 0;
   text-decoration: none;
+}
+#optionsRight {
+  float: right;
+}
+.Red {
+  background-color: red;
+}
+.Blue {
+  background-color: blue;
+}
+.Green {
+  background-color: green;
 }
