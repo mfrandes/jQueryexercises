@@ -170,4 +170,21 @@ $('#myColorRight').on('change', function () {
     })
     
 })
-
+/* text decoration and counting*/
+$("#textDe h2").each(function(){
+    var textWords = $(this).text().split('');
+    
+    $(this).empty().html(function(){
+        for(i=0; i < textWords.length; i++ ) {
+            if(i === 0){
+                $(this).append(`<span style="text-decoration:underline">` + textWords[i] + `</span>`);
+            }else{
+                $(this).append(`<span style="text-decoration:underline">` + textWords[i] + `</span>`);
+            }
+        }
+    });
+});
+$("#textDe form input").keyup(function(){
+    var tValue = $(this).val();
+    console.log(tValue);
+})
