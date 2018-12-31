@@ -197,3 +197,16 @@ function classRemover(){
     console.log("click pe remoove classes")
     $('div').removeClass();
 };
+/**remove clas using .css funtion */
+function remClassTextUderLine(){
+    console.log("you hit the Hot spot!!");
+    $("#textDe h2 span").css("text-decoration", "none");
+/** identify left or right click */
+};
+$("#remClass").click(function(){
+    console.log("Left mouse click!");
+});
+$("#remClass").on("contextmenu", function(){
+    console.log("Right mouse click!");
+    return false;
+});

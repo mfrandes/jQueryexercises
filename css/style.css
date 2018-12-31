@@ -65,7 +65,7 @@ td {
 .transferBtn {
   width: 28%;
   height: 28%;
-  margin: 2%;
+  margin: auto;
 }
 
 /* sectiune modal*/
@@ -142,5 +142,5 @@ td {
   background-color:yellow;
 }
 #textDe form{
-  margin: 20px 200px 0 200px;  
+  margin: 20px auto 0 auto;  
 }
