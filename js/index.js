@@ -186,12 +186,14 @@ $("#textDe h2").each(function(){
 });
 $("#textDe form input").keyup(function(){
     var tValue = $(this).val();
+    var tLenght = $(this).val().length;
     console.log(tValue);
+    $("#charNr").text(tLenght);
+
 })
 /* Remove all class */
 
 function classRemover(){
     console.log("click pe remoove classes")
-        $('div').removeClass();
-
+    $('div').removeClass();
 };
