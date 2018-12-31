@@ -188,3 +188,10 @@ $("#textDe form input").keyup(function(){
     var tValue = $(this).val();
     console.log(tValue);
 })
+/* Remove all class */
+
+function classRemover(){
+    console.log("click pe remoove classes")
+        $('div').removeClass();
+
+};
