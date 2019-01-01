@@ -17,8 +17,13 @@
             </thead>
             <tbody></tbody>
         </table>
-        <button id="newContactBtn">Add new Student</button>
-        <button id="print">Print</button>
+        <div class="wrap">
+            <button id="newContactBtn">Add new Student</button>
+            <p>The above table has <span id="rowSpan" style="color:blue; font-weight:800"></span> rows and <span id="columsSpan"
+                    style="color:green; font-weight:800"></span> colums.
+            </p>
+            <button id="print">Print</button>
+        </div>
         <div id="firstOfWrap" class="wrap">
             <div>
                 <h3>Character counting exercice</h3>
@@ -68,9 +73,9 @@
             </span>
             <span id="optionsRight">
                 <select id="myColorRight">
-                    <option  selected="selected" value="Red">Red</option>
-                    <option  value="Blue">Blue</option>
-                    <option  value="Green">Green</option>
+                    <option selected="selected" value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
                     <option value="yellow">Yellow</option>
                     <option value="Pink">Pink</option>
                     <option value="Black">Black</option>
@@ -80,15 +85,23 @@
             </span>
         </div>
         <div id="textDe" class="wrap">
-            <h2>
-                Übung macht den Meister
-            </h2>
+            <span>
+                <h2>
+                    Übung macht den Meister
+                </h2>
+                <h5 id="unAltId"></h5>
+            </span>
             <form action="">
                 <input type="text">
                 <br>
                 <p>You typed <span id="charNr">0</span> characters</p>
+                <h4></h4>
+                <button id="jQcheck" onclick="checkJq()">Jquery check</button>
             </form>
-            <button id="remClass" onclick="remClassTextUderLine()" ondblclick="classRemover()">Remoove underline, <br> dblclikc.. surpize:)</button>
+            <button id="remClass" onclick="remClassTextUderLine()" ondblclick="classRemover()">Remoove underline, <br>
+                dblclikc.. surpize:)</button>
+
+
         </div>
     </div>
 

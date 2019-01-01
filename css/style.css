@@ -32,11 +32,13 @@ td {
 #print{
   float: right;
   margin-top: 20px;
+  align-content: flex-end
 }
 .wrap{
   border-top: 2px solid darkblue;
   display: flex;
   margin-top: 10px;
+  justify-content: space-between;
 }
 #textarea {
   display:block;
@@ -51,6 +53,7 @@ td {
 #secondOfWrap {
   height: 400px;
   display: flex;
+  
 }
 #leftSide {
  
@@ -65,7 +68,7 @@ td {
 .transferBtn {
   width: 28%;
   height: 28%;
-  margin: auto;
+  margin: 2%;
 }
 
 /* sectiune modal*/

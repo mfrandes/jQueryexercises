@@ -120,13 +120,16 @@ function newDiv() {
         var test = {
             id: "div",
             class: "wrap",
-            css: {
-                "background-color": "green"
-            }
         }
         var $div = $("<div>", test);
-        $div.html("New Division");
-        $(".container").append($div);
+        var g = $("#textarea").val();
+        if(g == ""){
+            alert("Textbox must not be empty")
+            console.warn("Please enter text");
+        }else{
+            $div.html(`${g}`);
+            $(".container").append($div);
+        }
     });
 }
 
@@ -187,7 +190,7 @@ $("#textDe h2").each(function(){
 $("#textDe form input").keyup(function(){
     var tValue = $(this).val();
     var tLenght = $(this).val().length;
-    console.log(tValue);
+    
     $("#charNr").text(tLenght);
 
 })
@@ -211,4 +214,44 @@ $("#remClass").click(function(){
 $("#remClass").on("contextmenu", function(){
     console.log("Right mouse click!");
     return false;
+});
+/** Check if a obgect is Jquery */
+function checkJq(){
+    var $q = $("#textDe form input").val();
+   
+    console.log("to check:", $q );
+    
+    if($q.jquery){
+        alert("Your text is Jquery")
+        
+    }else{
+        alert("Your text is Not Jquery")
+    }
+}
+/** check if Enter key is presed */
+
+$(document).keypress(function(e){
+    if(e.which == 13){
+        console.log("you pressed ENTER!");
+    }
+});
+/** count number of rows and colums in a table */
+
+
+$(document).ready(function countTable() {
+    var a =$('#table-first tbody tr');
+    var b =$('#table-first tr td');
+    $("#rowSpan").text(a.length);
+    $("#columsSpan").text(b.length / a.length);
+});
+
+/** turn j query in to a string exercise 27 w3 */
+
+$(document).ready(function(){
+var element = $('<h1>',{
+    text : "jQuery",
+    class : "test"
+});
+console.log("acesta este un test pentru element", element);
+$('#unAltId').text( element.get(0).outerHTML);
 });
