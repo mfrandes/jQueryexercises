@@ -201,7 +201,7 @@ function classRemover(){
     $('div').removeClass();
 };
 
-/**remove clas using .css funtion */
+/** remove style using .css funtion */
 function remClassTextUderLine(){
     console.log("you hit the Hot spot!!");
     $("#textDe h2 span").css("text-decoration", "none");
