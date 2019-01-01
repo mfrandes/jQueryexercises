@@ -1,33 +1,33 @@
-#exercises Jquery
+# exercises Jquery
 
- ###Nav pages 
+ ### Nav pages 
 
- ###Load data from json to html table 
+ ### Load data from json to html table 
 
- ###Print page btn  
+ ### Print page btn  
 
- ###Limit character input in the textarea including count 
+ ### Limit character input in the textarea including count 
 
- ###Turn first word to bold
+ ### Turn first word to bold
 
- ###Create new div btn
+ ### Create new div btn
 
- ###Transfer btn from one div to another
+ ### Transfer btn from one div to another
 
- ###Options on a select box
+ ### Options on a select box
 
- ###Text decoration and counting characters in a imput
+ ### Text decoration and counting characters in a imput
 
- ###Remove all class btn
+ ### Remove all class btn
 
- ###Remove style using .css funtion
+ ### Remove style using .css funtion
 
- ###Identify left or right click
+ ### Identify left or right click
 
- ###Check if a obgect is Jquery
+ ### Check if a obgect is Jquery
 
- ###Check if Enter key is presed
+ ### Check if Enter key is presed
 
- ###Count number of rows and colums in a table
+ ### Count number of rows and colums in a table
 
- ###Turn j query in to a string 
+ ### Turn j query in to a string 
