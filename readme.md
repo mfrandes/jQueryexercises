@@ -1,4 +1,4 @@
-# exercises Jquery
+# Exercises Jquery
 
  ### Nav pages 
 
@@ -30,4 +30,6 @@
 
  ### Count number of rows and colums in a table
 
- ### Turn j query in to a string 
+ ### Turn jquery in to a string 
+
+ ### Detect a textbox's content has changed

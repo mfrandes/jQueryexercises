@@ -255,3 +255,9 @@ var element = $('<h1>',{
 console.log("acesta este un test pentru element", element);
 $('#unAltId').text( element.get(0).outerHTML);
 });
+/**  detect a textbox's content has changed */
+
+$("#textDe form input").on("input", function(){
+    var e = $(this).val();
+    console.log("text changed to: ", e );
+});
