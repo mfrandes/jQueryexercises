@@ -8,7 +8,7 @@ function sufrfPages() {
     });
 };
 sufrfPages();
-$(`#second-page`).show();
+$(`#third-page`).show();
 
 /* load data from json to html table */
 
@@ -46,50 +46,6 @@ function closeModal() {
 /* add new contact attempt ..sow far */
 
 
-document.getElementById("submitBtn").onclick = newContact;
-
-function newContact() {
-    var nfn = $('#lName').val();
-    var nln = $('#fName').val();
-    var npn = $('#phoneNumber').val();
-    $.getJSON("data/new_data.json", function (data) {
-        var newContact = {
-            fName: nfn,
-            lName: nln,
-            grade: npn
-        }
-        data.push(newContact);
-        var newData = JSON.stringify(newContact);
-        /*fs.writeFile('data/data.json', newData, 'utf8', function (err) {
-            if (err) throw err;
-            console.log('The file has been saved!');
-        });*/
-
-        console.log("new contact: ", newData);
-
-
-        $.ajax({
-            type: 'POST',
-            data: newData,
-            url: 'data/new_data.json',
-            success: function () {
-                console.info('data saved!')
-            },
-            error: function () {
-                console.error('fail to save data')
-            }
-        });
-
-
-        /*jQuery.post('http://localhost:3000/data/agenda.json', {
-            newData: newData
-        }, function (response) {
-            console.info("caontact saved")
-        })*/
-    })
-    console.log(nfn, nln, npn);
-    document.getElementById("modal1").style.display = "none";
-}
 /* print page  */
 
 $('#print').on('click', function () {
